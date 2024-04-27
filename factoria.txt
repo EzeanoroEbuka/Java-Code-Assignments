@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+   public class factoria {
+
+	public static void main(String[] args) {
+
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Enter integer"+factors+":);
+	int ('n') = scanner.nextInt();
+
+	int
+
+	

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+`import java.util.Scanner;
  import java.util.Date;
  import java.util.ArrayList;
 
@@ -21,13 +21,17 @@ import java.util.Scanner;
 	 do{
 	 Scanner scan2 = new Scanner(System.in);
 	 System.out.println("What did the user buy?");
-	 String itemName = scan2.nextLine();
+	 String itemName = scan2.next();
 	
 	 System.out.println("How Many Pieces?");
 	  double pieces = scan.nextDouble();
-	
+	  if(pieces < 1)
+		System.out.println("Invalid Quantity");
+
 	  System.out.println("How much per unit?");
 	  double perUnit = scan.nextDouble();
+		if(perUnit < 1)
+		System.out.println("Invalid Price");
 
 	   total = pieces * perUnit;
 
@@ -41,8 +45,12 @@ import java.util.Scanner;
 	  addItem = input.nextLine();
 	    if(addItem.equalsIgnoreCase("no")){
 		break;}
+	    
 	    }while(addItem.equalsIgnoreCase("yes"));
-	   
+	  if(total < 1)
+		System.out.println("Invalid Quantity");
+		
+
 	  Scanner scan3 = new Scanner(System.in); 
 	  System.out.println("What is your Name(Cashier's Name:)");
 	  String cashierName = scan3.nextLine();
@@ -51,7 +59,6 @@ import java.util.Scanner;
 	  double discount = scan.nextInt();
 
 	  String prompt = """
-
 
 	  SEMICOLON STORES
 	  MAIN BRANCH

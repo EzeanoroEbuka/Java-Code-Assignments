@@ -1,0 +1,25 @@
+import java.util.scanner;
+ 
+ 	public class Arithemetics {    
+    
+		public static void main(String[] args) {
+       
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println ("Enter first integer");
+			int number1 = input.nextInt();
+
+			System.out.println ("Enter second integer");
+			int number2 = scanner.nextInt();
+     
+			int sqaureOfNumber1 = number1 * number1;
+  			int sqaureOfNumber2 = number2 * number2;
+
+			int sum = squareOfNumber1 + squareOfNumber2;
+
+			int difference = squareOfNumber1 - squareOfNumber2;
+
+			System.out.printf("sum of squares is %d",sum);
+			System.out.printf("difference of squares is %d", difference);
+	}
+}

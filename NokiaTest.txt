@@ -1,0 +1,466 @@
+public static int menu(int number) {
+
+	String prompt = """
+	Welcome to your Nokia phone
+	Your Nokia menu map
+
+	*List of menu function
+	1. -> Phone Book
+	2. -> Message 
+	3. -> Chat	
+	4. -> Call Register
+	5. -> Tones 
+	6. -> Settings
+	7. -> Call divert
+	8. -> Games 
+	9. -> Calculator
+	10. -> Reminders
+	11. -> Clock
+	12. -> Profiles
+	13. -> SIM Services
+	0. -> Back
+	""";
+
+}
+
+public static int phoneBook(int number) {
+
+	System.out.println("""
+		************************
+		* WELCOME TO PHONEBOOK *
+		************************
+	select option or press # to return back
+	1. -> Search
+	2. -> Service Nos.
+	3. -> Add name
+	4. -> Erase
+	5. -> Edit
+	6. -> Assign tone
+	7. -> Send b'card
+	8. -> options
+	9. -> Speed dials
+	10. -> Voice tags
+	0. -> Back 
+	""");
+
+	}
+
+
+
+public static int search(int number) {
+	
+	System.out.println("""
+		:::::::::::::
+		::  SEARCH ::
+		:::::::::::::
+	
+	Search is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int serviceNos(int number) {
+
+	System.out.println("""
+		::::::::::::::::::
+		:: SERVICE NOS. ::
+		::::::::::::::::::
+	
+	Service Nos. is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int addName(int number) {
+	
+	System.out.println("""
+		::::::::::::::
+		:: ADD NAME ::
+		::::::::::::::
+	
+	Add Name is Empty!!!!
+	
+	0. -> Back
+		""");
+	}
+
+public static int erase(int number) {
+	
+	System.out.println("""
+		:::::::::::
+		:: ERASE ::
+		:::::::::::
+	
+	Erase is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int edit(int number) {
+	
+	System.out.println("""
+		::::::::::
+		:: EDIT	::
+		::::::::::
+	
+	Edit is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int assignTone(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::
+		:: ASSIGN TONE ::
+		:::::::::::::::::
+	
+	Assign Tone is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int sendBCard(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::
+		:: SEND B' CARD ::
+		::::::::::::::::::
+	
+	Send b' card is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int option(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::::
+		:: SELECT OPTIONS ::
+		::::::::::::::::::::
+
+		1. -> Type of view
+		2. -> Memory status
+		0. -> Back
+		""");
+	}
+
+public static int typeOfViews(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::: 
+		:: TYPE OF VIEWS ::
+		::::::::::::::::::::
+	
+	Erase is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int memoryStatus(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::
+		:: MEMORY STATUS ::
+		:::::::::::::::::::
+
+		Current Memory Status is Empty !!!!
+		0. -> Back
+		""");
+	}
+public static int speedDails(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::
+		:: SPEED DAILS ::
+		:::::::::::::::::
+	
+	Speed Dailer is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int voiceTags(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::: 
+		:: VOICE TAGS ::
+		::::::::::::::::::::
+	
+	Voice Tags is Empty!!!!
+
+	0. -> Back
+		""");
+	}
+
+public static int message(int number) {
+	
+		  System.out.println("""
+		++++++++++++++++++++++
+		+ WELCOME TO MESSAGE +
+		++++++++++++++++++++++
+		select  an option 
+		1. -> Write message
+		2. -> Inbox
+		3. -> Outbox
+		4. -> Picture messages
+		5. -> Templates
+		6. -> Smileys
+		7. -> message settings 
+		8. -> info service
+		9. -> Voice mailbox number
+		10. Service command editor 
+		""");
+}
+
+public static int writeMessage(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::
+		:: WRITE MESSAGES::
+		:::::::::::::::::::
+
+		Write message is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+public static int inbox(int number) {
+	
+	System.out.println("""
+		:::::::::
+		::INBOX::
+		:::::::::
+
+		Inbox is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+
+public static int outBox(int number) {
+	
+	System.out.println("""
+		::::::::::
+		::OUTBOX::
+		::::::::::
+
+		Outbox is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+
+public static int pictureMeassages(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::::
+		::PICTURE MESSAGES::
+		::::::::::::::::::::
+
+		Picture Message is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+public static int template(int number) {
+	
+	System.out.println("""
+		::::::::::::::
+		:: TEMPLATE ::
+		::::::::::::::
+
+		Template is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+public static int smiley(int number) {
+	
+	System.out.println("""
+		:::::::::::::
+		:: SMILEYS ::
+		:::::::::::::
+
+		Smiley is Empty !!!!
+		0. -> Back
+		""");
+	}
+
+public static int messageSetting(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::::::::::::::::
+		:: WELCOME TO MESSAGE SETTINGS ::
+		:::::::::::::::::::::::::::::::::
+		
+		1. -> Set 1
+		2. -> Commons
+		0. -> Back
+		""");
+	}
+
+
+
+public static int setOne(int number) {
+	
+	System.out.println("""
+		:::::::::
+		::SET 1::
+		:::::::::
+
+		1. -> Message Centre Number
+		2. -> Message Sent As 
+		3. -> Message Validity
+		0. -> Back
+		""");
+	}
+public static int messageCN(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::::::::::
+		:: MESSAGE CENTRE NUMBER ::
+		:::::::::::::::::::::::::::
+		+234800000000000.
+		0. -> Back
+		""");
+	}
+
+
+public static int sentAs(int number) {
+	
+	System.out.println("""
+		:::::::::::::
+		:: SENT AS ::
+		:::::::::::::
+
+		Sent as an Outbox		
+		0. -> Back
+		""");
+	}
+public static int validity(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::::::
+		:: MESSAGE VALIDITY ::
+		::::::::::::::::::::::
+
+		Valid messages are Saved !!!!
+		0. -> Back
+		""");
+
+	}
+public static int commons(int number) {
+	
+	System.out.println("""
+		:::::::::::::
+		:: COMMONS ::
+		:::::::::::::
+
+		1.Delivery Report
+		2.Reply Via Same Centre
+		3.Character Support
+		0. -> Back
+		""");
+	
+		
+	}
+
+public static int reports(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::::
+		:: DELIVERY REPORT ::
+		:::::::::::::::::::::
+
+		No Reports are Saved !!!!
+		0. -> Back
+		""");
+
+	}
+
+
+public static int reply(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::::::::::
+		:: REPLY VIA SAME CENTRE ::
+		:::::::::::::::::::::::::::
+
+		No Replies are Saved !!!!
+		0. -> Back
+		""");
+
+	}
+
+public static int character(int number) {
+	
+	System.out.println("""
+		:::::::::::::::::::::::
+		:: CHARACTER SUPPORT ::
+		:::::::::::::::::::::::
+
+		Character Support Missing !!!!
+		0. -> Back
+		""");
+
+	}
+public static int infoService(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::
+		:: INFO SERVICE ::
+		::::::::::::::::::
+
+		EMPTY !!!!
+		0. -> Back
+		""");
+
+	}
+
+public static int voiceMail(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::::::::::				
+		:: VOICE MAILBOX NUMBER ::
+		::::::::::::::::::::::::::
+
+		Voice Mailbox is Empty !!!!
+		0. -> Back
+		""");
+
+	}
+
+
+public static int serviceCommand(int number) {
+	
+	System.out.println("""
+		::::::::::::::::::::::::::::
+		:: SERVICE COMMAND EDITOR ::
+		::::::::::::::::::::::::::::
+
+		All Commands has Successfully been Edited and Saved !!!!
+		0. -> Back
+		""");
+
+	}
+
+public static int chat(int number) {
+	
+	System.out.println("""
+		:::::::::::
+		:: CHATS ::
+		:::::::::::
+
+		Sent as an Outbox		
+		0. -> Back
+		""");
+	}

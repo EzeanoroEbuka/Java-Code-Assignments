@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+   public class Financeapp {
+
+	public static void main(String[] args) {
+
+	Scanner input = new Scanner(System.out);
+
+	System.out.println("Enter investmentAmount:");
+	double num1 = scanner.nextDouble();
+
+	System.out.println("Enter annualInterestRate:");
+	double num2 = scanner.nextDouble();
+
+	System.out.println("Enter years:");
+	int num3 = scanner.nextInt();
+
+	double num4 = num1 * math.pow( 1 + monthlyInterestRate , num3 *12 );
+	
+	System.out.printf("futureInterestValue is $%.2f",num4);

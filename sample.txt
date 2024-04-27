@@ -1,0 +1,12 @@
+import java. util. Scanner;
+  public class RightAngle {
+	public static void main(Strings[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+ 		system.out.println("Enter lengthOfBase");
+		int num1 = new scanner.nextInt();
+		int count = 1;
+
+ while (count <= 10) {
+ System.out.println(count % 3 == 1 ? "########" : "++++++

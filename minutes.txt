@@ -1,0 +1,23 @@
+import java.util.Scanner;
+	
+   public class Minutes {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter number of minutes:");
+		int number 1 = scanner.nextInt();
+
+		int minuteInAYear = number 1 / (60*24*365);
+
+		int minuteInADay = (minuteInAYear)%24;
+
+		System.out.printf("%d",minuteInADay);
+
+
+
+
+     }
+
+}

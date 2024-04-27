@@ -1,0 +1,34 @@
+Array is a collection of elements of same type. For example an int array contains integer elements and a String array contains String elements. The elements of Array are stored in contiguous locations in the memory.
+
+This is how an array looks like:
+
+int number[] = new int[10]
+
+Here number is the array name. The type of the array is integer, which means it can store integer values. The size of the array is 10.
+
+Array works on an index-based system. In the above array, number[0] represents the first element of the array, number[1] represents the second element of the array and so on. 
+The index of array starts from 0 and ends at array_size-1. In the above example, the index of first element is 0 and index of 10th element is 9.
+
+Declaration, Instantiation and Initialization of Array in Java
+
+This is how we declare, instantiate and initialize an array.
+
+int number[]; //array declaration
+number[] = new int[10]; //array instantiation
+number[0] = 10; //array Initialization
+number[1] = 20; //array Initialization
+
+
+Access the element in an Array
+
+public class JavaExample{
+  public static void main(String args[]){
+    //array declaration, instantiation and initialization
+    int number[] = new int[10]; //array instantiation
+
+    //print array elements
+    //length property return the size of the array
+    for(int i=0;i<number.length;i++)
+      System.out.println(number[i]);
+  }
+}

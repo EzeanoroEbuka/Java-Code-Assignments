@@ -1,0 +1,63 @@
+import java.util.scanner;
+
+   public class Arithmetics {
+
+	public static void main(String[] args)  {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter first integer");
+		int number1 = scanner.nextInt();
+
+		System.out.println("Enter second integer");
+		int number2 = scanner.nextInt();
+
+		System.out.println("Enter third integer");
+`		int number3 = scanner.nextInt();
+
+		int sum = number1 + number2 + number3;
+		int multiply = number1 * number2 * number3;
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
