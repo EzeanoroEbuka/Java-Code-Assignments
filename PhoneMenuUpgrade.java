@@ -257,7 +257,7 @@ import java.util.Scanner;
 				     }			
 			
 			 case 6 -> {System.out.println("""
-				      :::::::::::::::::::
+:				      ::::::::::::::::::
 				      : SHOW CALL COSTS :
 				      :::::::::::::::::::
 				1.Last Call Costs
