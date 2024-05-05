@@ -16,9 +16,15 @@ public class StudentGrade {
 		""");	
 	System.out.println(prompt);
 	
-	int totalTwo = 0;
-	int total = 0;
+	
 	double average = 0;
+	int passMark = 50;
+
+	int[] subjectPass = new int[subjects];
+	int[] subjectFail = new int[subjects];
+	int[] totalSub = new int[subjects];
+
+	double[] averageSub = new double[subjects];
 	int[] indexCollector = new int[2];
 
 	int[][] studentSubject = new int[students][subjects];
@@ -31,7 +37,7 @@ public class StudentGrade {
 	int[] lowestSubScore = new int[subjects];
 	
 	for(int count = 0;count < students; count++) {
-
+		int total = 0;
 		for(int counter = 0;counter < subjects;counter++) {
 			System.out.println("Entering Score for Student " + (count + 1));
 			System.out.println("Enter Score for Subject " + (counter + 1));
@@ -49,24 +55,47 @@ public class StudentGrade {
 		arrTotal[count] = total;
 		
 		arrAverage[count] = average;
-		total = 0;
-
-
-	}
-	for(int counter = 0;counter < subjects; counter++) {
-		lowestSubScore[counter] = 100;
-		for(int count = 0;count < students;count++) {	
-			if(studentSubject[count][counter]  < lowestSubScore[counter])
-				lowestSubScore[counter] = studentSubject[count][counter];
-				indexCollector[0] = count;
-			if(studentSubject[count][counter]  > highestSubScore[counter])
-				highestSubScore[counter] = studentSubject[count][counter];
-				indexCollector[1] = count;
-		}
 		
 	}
+
+	for(int counter = 0;counter < subjects; counter++) {
+		lowestSubScore[counter] = 100;
+
+		for(int count = 0;count < students;count++) {	
+			if(studentSubject[count][counter] < lowestSubScore[counter])
+				lowestSubScore[counter] = studentSubject[count][counter];
+				indexCollector[0] = (count);
+
+			if(studentSubject[count][counter]  > highestSubScore[counter])
+				highestSubScore[counter] = studentSubject[count][counter];
+				indexCollector[1] = (count);
+		}
+	}
+	
+	for(int count = 0;count < subjects;count++) {
+		int subjectTotal = 0;
+		int passes = 0;
+		int fails = 0;
+		double subjectAverage = 0;
+		for(int counter = 0;counter < students;counter++) {
+			 subjectTotal += studentSubject[counter][count];
+			if(studentSubject[counter][count] >= passMark)
+				passes += 1;
+			else
+				fails += 1; 
+		}
+		subjectAverage = subjectTotal / students;
+		totalSub[count] = subjectTotal;
+		averageSub[count] = subjectAverage;
+		subjectPass[count] = passes;
+		subjectFail[count] = fails;
+	}
+
 	position = SortFunction.positionSorting(arrTotal);
 	
+
+
+
 
 	System.out.printf("=========================================================================================================================\n");
 	System.out.println();	
@@ -74,6 +103,7 @@ public class StudentGrade {
 	for(int count = 1;count <= subjects;count++) {
 		System.out.print("SUB" + count + "\t");
 	}
+
 	System.out.printf("TOT \t AVE \t   POS\n");
 	System.out.println();
 	System.out.printf("==========================================================================================================================\n");
@@ -83,21 +113,18 @@ public class StudentGrade {
 		
 		for(int counter = 0;counter < subjects;counter++) {
 			System.out.print(studentSubject[count][counter] + "\t");
-		
 		}
-		System.out.print(arrTotal[count] + "\t");
 
+		System.out.print(arrTotal[count] + "\t");
 
 		System.out.printf("%.2f\t  ",arrAverage[count]);
 
 		System.out.print(position[count]);
-
 		System.out.println();
 	}
+
 	System.out.printf("=========================================================================================================================\n");
-
 	System.out.println();
-
 	System.out.printf("=========================================================================================================================\n");
 	
 
@@ -107,10 +134,16 @@ public class StudentGrade {
 	System.out.println("SUBJECT SUMMARY");
 		
 	for(int j = 0; j < subjects;j++) { 
-	System.out.println("Highest scoring Student is:  Student " + indexCollector[1] + " " + highestSubScore[j]);
-	System.out.println("Lowest scoring Student is:  Student " + indexCollector[0] + " " +lowestSubScore[j]);
+		System.out.printf("======================================================\n");
+		System.out.println("SUBJECT " + (j + 1));
+
+		System.out.printf("Highest scoring Student is:  Student %d scoring %d%nLowest scoring Student is:  Student %d scoring %d%n",indexCollector[1],highestSubScore[j],indexCollector[0],lowestSubScore[j]);
+		
+		System.out.printf("Total Score is: %d%nAverage Score is: %.2f%nNumber of Passes: %d%nNumber of Fails: %d%n",totalSub[j],averageSub[j],subjectPass[j],subjectFail[j]);
+		System.out.printf("======================================================\n");
+		System.out.println();
 	}
-	System.out.printf("======================================================\n");
+
 
 
 }
